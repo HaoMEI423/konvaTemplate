@@ -7,17 +7,19 @@
     
     <script src="https://unpkg.com/konva@10/konva.min.js"></script>
 
-     <link rel="stylesheet" href="reste.css">
-     <link rel="stylesheet" href="style.css">
-     <script src="main.js" defer></script>
+     <link rel="stylesheet" href="../reste.css">
+     <link rel="stylesheet" href="mappingStyle.css">
+     <script src="mappingMain.js" defer></script>
 </head>
 <body>
 
 <main>
 
-    <div class="toolBar"></div>
+    <div class="toolBar">
+        <button id="circle-button">draw a new circle</button>
+    </div>
 
-    <div class="stageContainer">
+    <div class="stageContainer" id="stage-container">
         <div id="konva-stage"></div>
     </div>
 </main>
