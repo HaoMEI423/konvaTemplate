@@ -1,11 +1,35 @@
+:root{
+    --colour1: black;
+    --colour2: white;
+    --colour3: coral;
+    --colour4: cornflowerblue;
+    --border: dashed 0.2rem var(--colour3);
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+    --colour1: white;
+    --colour2: black;
+    }
+}
+
 main{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: var(--colour2);
+    color: var(--colour1);
+    border: var(--border);
 }
 
 .stageContainer {
-    background-color: rgb(103, 76, 112);
+    background-color: rgb(195, 192, 159);
     flex: 1;
-    cursor: crosshair
+    cursor: crosshair;
+}
+
+button {
+    background-color: var(--colour1);
+    color: var(--colour2);
+    border: var(--border);
 }
